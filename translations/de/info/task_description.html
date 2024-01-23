@@ -1,0 +1,28 @@
+<p>Diese Mission ist der Beginn einer Reihe von Missionen, die dem japanischen Spiel "<a href="https://en.wikipedia.org/wiki/Japanese_mahjong">riichi mahjong</a>" gewidmet sind. In jeder folgenden Mission wird Ihre Aufgabe schwieriger.</p>
+
+<p>Bei Riichi Mahjong geht es darum, durch Ablegen und Aufnehmen von Karten eine bestimmte Kombination von Karten zu sammeln. Darin ähnelt es dem Pokerspiel, nur dass es viel mehr Karten gibt und die Runden länger sind. Die Karten in diesem Spiel werden Kacheln genannt, und jeder Spieler hat 14 davon.</p>
+
+<p>Bei Riichi gibt es Spielsteine in fünf Farben. Drei davon sind digital: Mann, Nadel und so; jede der digitalen Farben enthält Spielsteine von 1 bis 9. Die vierte Farbe sind Drachen; sie enthält drei Arten von Spielsteinen - einen weißen Drachen, einen roten Drachen und einen grünen Drachen. Die fünfte Farbe ist der Wind. Wie leicht zu erraten ist, enthält sie vier Winde, die den Namen der Himmelsrichtungen entsprechen. Jedes Plättchen gibt es in vier Exemplaren.</p>
+
+<p>Einigen wir uns nun auf die Bezeichnungen der Spielsteine. Die Farben von Mann, Nadel und so werden mit "m", "p" und "s" abgekürzt, Drachen und Winde mit "d", "w". "Rot", "Weiß" und Grün werden mit "r", "w" und "g" bezeichnet. Die "nördlichen", "südlichen" usw. Winde werden auf die gleiche Weise verschlüsselt wie die Himmelsrichtungen. So wird z.B. "6 Mann" als "m6" und "grüner Drache" als "dg" geschrieben.</p>
+
+<p>Das fertige Blatt sollte, wie bereits erwähnt, eine bestimmte Kombination von Spielsteinen enthalten. Genauer gesagt, sollte es vier Sets und ein Paar enthalten. Es gibt zwei Arten von Sets - chi und pona. Chi ist eine Folge von drei Steinen der gleichen Farbe in einer Reihe, zum Beispiel: "m123" oder "p567". In diesem Fall sind Kombinationen des Typs "m912" nicht erlaubt. Pons sind drei identische Spielsteine der gleichen Farbe, also "s999" oder "p444". Ein Paar besteht aus zwei identischen Steinen.</p>
+
+<p>Beispiel für ein Blatt: 234678 man, 234 pin, 888 so, zwei Südwinde. Dieses Blatt enthält vier Sätze (234 pin, 234 man, 678 man chi; 888 so- pont) und ein Paar (zwei Südwinde). Dies wird verschlüsselt als "m2", "m3", "m4", "m6", "m7", "m8", "p2", "p3", "p4", "s8", "s8", "s8", "ws", "ws".</p>
+
+<p>Das Ziel der Mission ist es, diese Menge von Spielsteinen ("Hand") in Sets aufzuteilen.</p>
+
+<p>
+<strong>Eingabedaten: </strong> Ein Argument (Listentyp) sind Strings, die Kacheln kodieren, in beliebiger Reihenfolge.
+</p>
+
+<p>
+<strong>Ausgabedaten: </strong> Liste von String-Sets (sortiert).
+</p>
+
+<p>
+<strong>Beispiel: </strong>
+</p>
+<pre class="brush: python">
+riichi_mahjong_sets(['m2', 's9', 'p9', 'dg', 's3', 's2', 'm1', 's8', 'dg', 'p9', 'dg', 's7', 's1', 'm3']) == ['dggg', 'm123', 'p99', 's123', 's789']
+</pre>
