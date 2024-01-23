@@ -61,6 +61,10 @@ TESTS = {
             "input": [['dw', 'we', 'm4', 'dr', 'dg', 'dg', 'dg', 'm3', 'm2', 'we', 'dw', 'dr', 'dw', 'dr']],
             "answer": ['dggg', 'drrr', 'dwww', 'm234', 'wee'],
             "explanation": "daysangen yakuman"
-        }
+        },
+        {
+            "input": [['m6', 'm7', 'm7', 'm8', 'm8', 'm9', 'p1', 'p2', 'p3', 'p4', 'p4', 'p5', 'p6', 'p7']],
+            "answer": ['m678', 'm789', 'p123', 'p44', 'p567'],
+            "explanation": "and finally, extra test"
     ]
 }
