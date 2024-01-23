@@ -1,0 +1,28 @@
+<p>Ta misja jest początkiem serii misji poświęconych japońskiej grze "<a href="https://en.wikipedia.org/wiki/Japanese_mahjong">riichi mahjong</a>". W każdej kolejnej misji Państwa zadanie będzie coraz trudniejsze.</p>
+
+<p>Znaczenie riichi mahjong polega na zebraniu określonej kombinacji kart poprzez odrzucanie i zabieranie kart. Przypomina to pokera, ale jest w nim znacznie więcej kart, a rundy są dłuższe. Karty w tej grze nazywane są płytkami, a każdy gracz ma ich 14.</p>
+
+<p>W riichi płytki występują w pięciu kolorach. Trzy z nich są cyfrowe: człowiek, szpilka i tak dalej; każdy z kolorów cyfrowych zawiera płytki od 1 do 9. Czwarty zestaw to smoki; zawiera on trzy rodzaje płytek - białego smoka, czerwonego smoka i zielonego smoka. Piąty to wiatr. Jak łatwo się domyślić, zawiera on cztery wiatry zgodnie z nazwami kierunków kardynalnych. Każda płytka występuje w czterech kopiach.</p>
+
+<p>Teraz uzgodnijmy oznaczenia płytek. Garnitury człowieka, szpilki i tak dalej będą skracane jako "m", "p" i "s", a smoki i wiatry jako "d", "w". "Czerwony", "biały" i zielony będą oznaczane jako "r", "w" i "g". Wiatry "północne", "południowe" itp. są kodowane w taki sam sposób, jak kierunki kardynalne. Tak więc, na przykład, "6 man" jest zapisywane jako "m6", a "zielony smok" jako "dg".</p>
+
+<p>Gotowy układ powinien, jak już wspomniano, zawierać określoną kombinację płytek. Dokładniej mówiąc, powinien zawierać cztery zestawy i parę. Istnieją dwa rodzaje zestawów - chi i pona. Chi to sekwencja trzech płytek tego samego koloru w rzędzie, na przykład: "m123" lub "p567". W tym przypadku kombinacje typu "m912" nie są dozwolone. Pony to trzy identyczne kamienie w tym samym kolorze, na przykład "s999" lub "p444". Para to dwa identyczne kamienie.</p>
+
+<p>Przykład układu: 234678 man, 234 pin, 888 so, dwa południowe wiatry. Ten układ zawiera cztery zestawy (234 pin, 234 man, 678 man chi; 888 so- pont) i parę (dwa południowe wiatry). Zostanie to zakodowane jako "m2", "m3", "m4", "m6", "m7", "m8", "p2", "p3", "p4", "s8", "s8", "ws", "ws".</p>
+
+<p>Celem misji jest podzielenie tego zestawu płytek ("ręki") na zestawy.</p>
+
+<p>
+<strong>Dane wejściowe: </strong> Jeden argument (typu lista) to ciągi znaków kodujące kafelki, w dowolnej kolejności.
+</p>
+
+<p>
+<strong>Dane wyjściowe: </strong> Lista zestawów ciągów znaków (posortowanych).
+</p>
+
+<p>
+<strong>Przykład: </strong>
+</p>
+<pre class="brush: python">
+riichi_mahjong_sets(['m2', 's9', 'p9', 'dg', 's3', 's2', 'm1', 's8', 'dg', 'p9', 'dg', 's7', 's1', 'm3']) == ['dggg', 'm123', 'p99', 's123', 's789']
+</pre>
