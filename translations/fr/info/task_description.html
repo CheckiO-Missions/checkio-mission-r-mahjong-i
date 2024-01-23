@@ -1,0 +1,28 @@
+<p>Cette mission est le début d'une série de missions dédiées au jeu japonais "<a href="https://en.wikipedia.org/wiki/Japanese_mahjong">riichi mahjong</a>". Dans chaque mission suivante, votre tâche deviendra plus difficile.</p>
+
+<p>Le sens du riichi mahjong est de rassembler une certaine combinaison de cartes en se débarrassant de cartes et en en prenant d'autres. En cela, il ressemble au poker, à ceci près qu'il y a beaucoup plus de cartes et que les tours sont plus longs. Les cartes de ce jeu sont appelées tuiles et chaque joueur en possède 14.</p>
+
+<p>Dans le jeu de riichi, les tuiles sont de cinq couleurs différentes. Trois d'entre elles sont numériques: homme, épingle et ainsi de suite; chacune des couleurs numériques contient des tuiles de 1 à 9. La quatrième couleur est celle des dragons; elle comprend trois types de tuiles: un dragon blanc, un dragon rouge et un dragon vert. La cinquième est le vent. Comme il est facile de le deviner, elle contient quatre vents correspondant aux noms des directions cardinales. Chaque tuile est vendue en quatre exemplaires.</p>
+
+<p>Mettons-nous d'accord sur les désignations des carreaux. Les couleurs de l'homme, de l'épingle et de so seront abrégées en "m", "p" et "s", et les dragons et les vents en "d", "w". les couleurs "rouge", "blanc" et vert seront désignées par "r", "w" et "g". Les vents "nord", "sud", etc. sont cryptés de la même manière que les directions cardinales. Ainsi, par exemple, "6 homme" s'écrit "m6", et "dragon vert" s'écrit "dg".</p>
+
+<p>Comme nous l'avons déjà mentionné, la main finie doit contenir une certaine combinaison de tuiles. Plus précisément, elle doit contenir quatre séries et une paire. Il existe deux types d'ensembles: le chi et le pona. Le chi est une suite de trois tuiles de la même couleur, par exemple: "m123" ou "p567". Dans ce cas, les combinaisons du type "m912" ne sont pas autorisées. Les pions sont trois tuiles identiques de la même couleur, par exemple: "s999" ou "p444". Une paire est constituée de deux tuiles identiques.</p>
+
+<p>Exemple de main: 234678 homme, 234 pin, 888 so, deux vents du sud. Cette main contient quatre jeux (234 pin, 234 man, 678 man chi; 888 so- pont) et une paire (deux vents du sud). Elle sera codée "m2", "m3", "m4", "m6", "m7", "m8", "p2", "p3", "p4", "s8", "s8", "s8", "ws", "ws".</p>
+
+<p>Le but de la mission est de diviser cet ensemble de tuiles ("main") en plusieurs ensembles.</p>
+
+<p>
+<strong>Données d'entrée: </strong> Un argument (de type liste) est constitué de chaînes de caractères codant des carreaux, dans n'importe quel ordre.
+</p>
+
+<p>
+<strong>Données de sortie: </strong> Liste d'ensembles de chaînes (triés).
+</p>
+
+<p>
+<strong>Exemple: </strong>
+</p>
+<pre class="brush: python">
+riichi_mahjong_sets(['m2', 's9', 'p9', 'dg', 's3', 's2', 'm1', 's8', 'dg', 'p9', 'dg', 's7', 's1', 'm3']) == ['dggg', 'm123', 'p99', 's123', 's789']
+</pre>
